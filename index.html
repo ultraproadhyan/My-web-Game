@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>My Web Game</title>
-  <link rel="icon" href="icon.png" type="image/png"> <!-- Yahan apna icon set karna -->
+  <link rel="icon" href="icon.png" type="image/png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     html, body {
       margin: 0;
       padding: 0;
-      height: 100%;
+      width: 100vw;
+      height: 100vh;
       overflow: hidden;
-      background: #000; /* black bg for clean look */
+      background: #000;
     }
+
     iframe {
+      position: fixed;
+      top: 0;
+      left: 0;
       border: none;
-      width: 100%;
-      height: 100%;
+      width: 100vw;
+      height: 100vh;
     }
   </style>
 </head>
 <body>
-  <iframe src="https://my-web-game-omega.vercel.app/"></iframe> <!-- Yahan apni site ka link daal -->
+  <iframe src="https://my-web-game-omega.vercel.app/" allowfullscreen></iframe>
 </body>
 </html>
